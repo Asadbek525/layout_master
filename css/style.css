@@ -5,7 +5,7 @@
 .container{
     
     display: grid;
-    grid-template-rows: 80px 600px auto 80px ;
+    grid-template-rows: 80px 600px auto auto ;
 }
 
 .zone {
@@ -90,7 +90,13 @@
 .yellow b{
     padding: 20px;
 }
-
+.yellow b a{
+    text-decoration: none;
+    color: white;
+}
+.yellow b a:hover{
+    color: rgb(165, 165, 165);
+}
 /***********************************************************************
  *  Blue Background
  **********************************************************************/
