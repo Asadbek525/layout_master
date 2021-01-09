@@ -1,22 +1,13 @@
-*{
-    margin: 0;
+body{
     box-sizing: border-box;
+    margin: auto 0;
 }
-.container{
-    
-    display: grid;
-    grid-template-rows: 80px 600px auto auto ;
-}
-
 .zone {
-    
-    
-
-    display:grid;
     color:#FFF;
-    font-size:2em;
-    border-radius:4px;
-    border:1px solid #bbb;
+    /* font-size: 2em; */
+    /* font-size:2em; */
+    /* border-radius:4px; */
+    /* border:1px solid #bbb; */
     transition: all 0.3s linear;
 }
 
@@ -32,52 +23,69 @@
  *  Green Background
  **********************************************************************/
 .green{
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 20px;
-    background-image: linear-gradient(rgb(0, 119, 255),#4c85db);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-image: linear-gradient(rgb(0, 127, 245),rgb(97, 218, 255));   
 }
-
-.green a{
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    padding:10px;
-
+.main-nav{
+    font-size:22px ;
+    display: flex;
+    list-style: none;
+    margin: 0;
 }
-.green div:last-child{
-    justify-self: end;
+.main-nav li{
+    padding: 15px 30px;
 }
-.green a:hover{
+.main-nav li a{
     
-    color: rgb(211, 211, 211);
+    text-decoration: none;
+    color: #e0e0e0;
+    
 }
+.main-nav li a:hover{
+    color: rgb(182, 182, 182);
+}
+.main-nav li:last-child{
+    margin-left: auto;
+}
+/*
+    Media query for Nav
+*/
+/* @media only screen and (max-width:600px){
+    .main-nav li{
+        padding:15px;
+    }
+    
+}  */
 /***********************************************************************
  *  Red Background
  **********************************************************************/
 .red{
-    display: grid;
-    background-color: #fff;
+    background-color:rgb(255, 255, 255);    
 }
 
-.red img{
-    min-width: 400px;
-    max-width: 30%;
-    justify-self: center;
-    align-self: center;
-    transition: all 0.5s;
-    cursor: pointer;
-}
+.cover{
+    padding: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
 
-.red img:hover{
+}
+.cover img{
+    max-width: 100%;
+    max-height: 100%;
     
-    transform: rotate(5deg) scale(1.05);
-
 }
 /***********************************************************************
  *  Yellow Background
  **********************************************************************/
 .yellow{
+    text-align: center;
+    font-size: 22px;
+    padding: 15px 0;
     background: #F3AAAA; /* Old browsers */
     background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
@@ -85,26 +93,12 @@
     background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
     background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
     background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
-    text-align: center;
 }
-.yellow b{
-    padding: 20px;
-}
-.yellow b a{
-    text-decoration: none;
-    color: white;
-}
-.yellow b a:hover{
-    color: rgb(165, 165, 165);
-}
+
 /***********************************************************************
  *  Blue Background
  **********************************************************************/
 .blue{
-    padding: 20px;
-    display: grid;
-    gap: 60px;
-    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
     background: #7abcff; /* Old browsers */
     background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
@@ -113,21 +107,25 @@
     background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
     background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
 }
-.blue div{
-    background-color: #282C34;
+.grid-wrapper{
+
     display: grid;
-    padding: 120px 0;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+}
+.box>img{
+    width: 100%;
+}
+.box{
+    background-color: #444;
+    padding: 100px;
+    margin: 20px;
     border-radius: 4px;
-    transition: all 0.5s;
+    cursor: pointer;
+    transition: all 0.3s;
 }
-.blue div:hover{
-    transform: scale(1.03);
-    box-shadow: 0 0 20px #282C34;
-}
-.blue div img{
-    justify-self: center;
-    align-self: center;
-    max-width: 35%;
-    height: auto;
-    
+.box:hover{
+    box-shadow: 0 0 10px #444;
+    transform: scale(1.03) rotate(-1deg);
+    z-index: 1;
 }
