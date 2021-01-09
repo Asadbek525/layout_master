@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    
+    display: grid;
+    grid-template-rows: 80px 600px auto 80px ;
+}
+
+.zone {
+    
+    
+
+    display:grid;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+/* .zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+} */
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background
+ **********************************************************************/
+.green{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px;
+    background-image: linear-gradient(rgb(0, 119, 255),#4c85db);
+}
+
+.green a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    padding:10px;
+
+}
+.green div:last-child{
+    justify-self: end;
+}
+.green a:hover{
+    
+    color: rgb(211, 211, 211);
+}
+/***********************************************************************
+ *  Red Background
+ **********************************************************************/
+.red{
+    display: grid;
+    background-color: #fff;
+}
+
+.red img{
+    min-width: 400px;
+    max-width: 30%;
+    justify-self: center;
+    align-self: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.red img:hover{
+    
+    transform: rotate(5deg) scale(1.05);
+
+}
+/***********************************************************************
+ *  Yellow Background
+ **********************************************************************/
+.yellow{
+    background: #F3AAAA; /* Old browsers */
+    background: -moz-linear-gradient(top, #F3AAAA 0%, #febf04 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3AAAA), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* IE10+ */
+    background: linear-gradient(top, #F3AAAA 0%,#febf04 100%); /* W3C */
+    text-align: center;
+}
+.yellow b{
+    padding: 20px;
+}
+
+/***********************************************************************
+ *  Blue Background
+ **********************************************************************/
+.blue{
+    padding: 20px;
+    display: grid;
+    gap: 60px;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+    background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+.blue div{
+    background-color: #282C34;
+    display: grid;
+    padding: 120px 0;
+    border-radius: 4px;
+    transition: all 0.5s;
+}
+.blue div:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #282C34;
+}
+.blue div img{
+    justify-self: center;
+    align-self: center;
+    max-width: 35%;
+    height: auto;
+    
+}
