@@ -52,13 +52,13 @@ body{
 }
 /*
     Media query for Nav
-*/
-/* @media only screen and (max-width:600px){
+/* */
+@media only screen and (max-width:610px){
     .main-nav li{
         padding:15px;
     }
     
-}  */
+} 
 /***********************************************************************
  *  Red Background
  **********************************************************************/
@@ -111,7 +111,7 @@ body{
 
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    grid-template-columns: repeat(auto-fill,minmax(322px,1fr));
 }
 .box>img{
     width: 100%;
